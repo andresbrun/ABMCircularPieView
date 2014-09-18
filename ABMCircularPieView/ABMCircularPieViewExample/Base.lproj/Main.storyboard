@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="muS-gl-gC0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJC-Bt-AS9" customClass="CircularPieProgressView" customModule="ABMCircularPieView">
                                 <rect key="frame" x="250" y="100" width="100" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -52,7 +56,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjY-AB-ISP" customClass="SurvivalCircularView" customModule="ABMCircularPieView">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="WKy-g0-Y0T"/>
                                     <constraint firstAttribute="width" constant="100" id="bcV-sm-fDF"/>
@@ -91,7 +95,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWB-B9-ddm" customClass="ScoreCircularView" customModule="ABMCircularPieView">
                                 <rect key="frame" x="250" y="400" width="100" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="68Y-4V-nWt"/>
                                     <constraint firstAttribute="height" constant="100" id="h9C-6D-WLt"/>
@@ -122,22 +126,131 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clockWise" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n9W-hx-9uh" userLabel="interactorSlider">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <connections>
+                                    <action selector="interactorSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="poS-7e-kat"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="M5i-ku-dv0">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VH-4R-E7o">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i8b-XE-FgD"/>
+                                    <constraint firstAttribute="width" constant="80" id="xeN-AV-mEr"/>
+                                </constraints>
+                                <state key="normal" title="Animate!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i8b-XE-FgD"/>
+                                        <exclude reference="xeN-AV-mEr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="i8b-XE-FgD"/>
+                                        <include reference="xeN-AV-mEr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="animateViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COL-Jm-U7K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3VH-4R-E7o" firstAttribute="leading" secondItem="M5i-ku-dv0" secondAttribute="trailing" constant="15" id="CjH-gW-5pl"/>
+                            <constraint firstItem="M5i-ku-dv0" firstAttribute="top" secondItem="muS-gl-gC0" secondAttribute="bottom" constant="-50" id="DOe-NB-yQl"/>
                             <constraint firstAttribute="centerX" secondItem="rJC-Bt-AS9" secondAttribute="centerX" id="EB3-5h-NJG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3VH-4R-E7o" secondAttribute="trailing" constant="15" id="FOT-bQ-3vt"/>
+                            <constraint firstItem="muS-gl-gC0" firstAttribute="top" secondItem="rJC-Bt-AS9" secondAttribute="bottom" id="G5N-eM-AZD"/>
                             <constraint firstAttribute="centerX" secondItem="rWB-B9-ddm" secondAttribute="centerX" id="JB0-fZ-hMD"/>
-                            <constraint firstAttribute="centerY" secondItem="rWB-B9-ddm" secondAttribute="centerY" constant="-150" id="kw1-p0-44K">
-                                <variation key="widthClass=compact" constant="-190"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3VH-4R-E7o" secondAttribute="bottom" constant="20" id="KKa-dN-BQh"/>
+                            <constraint firstItem="n9W-hx-9uh" firstAttribute="top" secondItem="muS-gl-gC0" secondAttribute="bottom" constant="-92" id="Mzw-c4-UpS"/>
+                            <constraint firstItem="n9W-hx-9uh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="S6v-6l-5jl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n9W-hx-9uh" secondAttribute="trailing" constant="15" id="SMJ-wW-cM0"/>
+                            <constraint firstItem="muS-gl-gC0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VgZ-aK-JrV">
+                                <variation key="widthClass=compact" constant="-16"/>
                             </constraint>
+                            <constraint firstItem="muS-gl-gC0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gaR-Yd-YdH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="muS-gl-gC0" secondAttribute="trailing" id="hfe-Wy-3N0">
+                                <variation key="widthClass=compact" constant="-16"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="rWB-B9-ddm" secondAttribute="centerY" constant="-150" id="kw1-p0-44K">
+                                <variation key="widthClass=compact" constant="-150"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="muS-gl-gC0" secondAttribute="bottom" id="smM-vO-vl0"/>
+                            <constraint firstItem="M5i-ku-dv0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="tgr-dP-con"/>
                             <constraint firstAttribute="centerX" secondItem="sjY-AB-ISP" secondAttribute="centerX" id="tmM-gR-Bwa"/>
                             <constraint firstAttribute="centerY" secondItem="rJC-Bt-AS9" secondAttribute="centerY" constant="190" id="vdi-Zy-3yN"/>
+                            <constraint firstItem="rWB-B9-ddm" firstAttribute="top" secondItem="muS-gl-gC0" secondAttribute="bottom" id="x0B-kt-7xX"/>
                             <constraint firstAttribute="centerY" secondItem="sjY-AB-ISP" secondAttribute="centerY" id="xqL-3u-t1q"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="muS-gl-gC0"/>
+                                <exclude reference="n9W-hx-9uh"/>
+                                <exclude reference="M5i-ku-dv0"/>
+                                <exclude reference="3VH-4R-E7o"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="G5N-eM-AZD"/>
+                                <exclude reference="VgZ-aK-JrV"/>
+                                <exclude reference="gaR-Yd-YdH"/>
+                                <exclude reference="hfe-Wy-3N0"/>
+                                <exclude reference="x0B-kt-7xX"/>
+                                <exclude reference="Mzw-c4-UpS"/>
+                                <exclude reference="S6v-6l-5jl"/>
+                                <exclude reference="SMJ-wW-cM0"/>
+                                <exclude reference="DOe-NB-yQl"/>
+                                <exclude reference="tgr-dP-con"/>
+                                <exclude reference="KKa-dN-BQh"/>
+                                <exclude reference="smM-vO-vl0"/>
+                                <exclude reference="CjH-gW-5pl"/>
+                                <exclude reference="FOT-bQ-3vt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="muS-gl-gC0"/>
+                                <include reference="n9W-hx-9uh"/>
+                                <include reference="M5i-ku-dv0"/>
+                                <include reference="3VH-4R-E7o"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="G5N-eM-AZD"/>
+                                <include reference="VgZ-aK-JrV"/>
+                                <include reference="gaR-Yd-YdH"/>
+                                <include reference="hfe-Wy-3N0"/>
+                                <exclude reference="x0B-kt-7xX"/>
+                                <include reference="Mzw-c4-UpS"/>
+                                <include reference="S6v-6l-5jl"/>
+                                <include reference="SMJ-wW-cM0"/>
+                                <include reference="DOe-NB-yQl"/>
+                                <include reference="tgr-dP-con"/>
+                                <include reference="KKa-dN-BQh"/>
+                                <include reference="smM-vO-vl0"/>
+                                <include reference="CjH-gW-5pl"/>
+                                <include reference="FOT-bQ-3vt"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="animatorSlider" destination="M5i-ku-dv0" id="BtC-cw-Okc"/>
+                        <outlet property="circularView" destination="rJC-Bt-AS9" id="fkD-Yl-2M8"/>
+                        <outlet property="scoresPieView" destination="rWB-B9-ddm" id="i8p-bs-Tpz"/>
+                        <outlet property="survivalPieView" destination="sjY-AB-ISP" id="ZZC-yR-6gi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1280" height="800"/>
+    </resources>
 </document>

@@ -58,6 +58,12 @@ import QuartzCore
     var trackView: UIView!
     var maskLayer: CAShapeLayer!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.setupView()
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
