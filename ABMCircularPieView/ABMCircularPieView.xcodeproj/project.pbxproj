@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CAC543319CB8EED00179BC2 /* ABMCircularPieViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC543219CB8EED00179BC2 /* ABMCircularPieViewTests.swift */; };
+		3CAC545419CB8F7400179BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC543D19CB8F7400179BC2 /* AppDelegate.swift */; };
+		3CAC545519CB8F7400179BC2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC543E19CB8F7400179BC2 /* LaunchScreen.xib */; };
+		3CAC545619CB8F7400179BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC544019CB8F7400179BC2 /* Main.storyboard */; };
+		3CAC545719CB8F7400179BC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC544219CB8F7400179BC2 /* Images.xcassets */; };
+		3CAC545819CB8F7400179BC2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC544319CB8F7400179BC2 /* Info.plist */; };
+		3CAC545919CB8F7400179BC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC544419CB8F7400179BC2 /* ViewController.swift */; };
+		3CAC545A19CB8F7400179BC2 /* BWGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC544819CB8F7400179BC2 /* BWGradientView.swift */; };
+		3CAC545B19CB8F7400179BC2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC544919CB8F7400179BC2 /* Info.plist */; };
+		3CAC545C19CB8F7400179BC2 /* CircularPieProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC544C19CB8F7400179BC2 /* CircularPieProgressView.swift */; };
+		3CAC545D19CB8F7400179BC2 /* CircularPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC544D19CB8F7400179BC2 /* CircularPieView.swift */; };
+		3CAC545E19CB8F7400179BC2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC544E19CB8F7400179BC2 /* Info.plist */; };
+		3CAC545F19CB8F7400179BC2 /* ScoreCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC545119CB8F7400179BC2 /* ScoreCircularView.swift */; };
+		3CAC546019CB8F7400179BC2 /* SurvivalCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC545319CB8F7400179BC2 /* SurvivalCircularView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CAC542D19CB8EED00179BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CAC540F19CB8EED00179BC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CAC541619CB8EED00179BC2;
+			remoteInfo = ABMCircularPieView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CAC541719CB8EED00179BC2 /* ABMCircularPieView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABMCircularPieView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAC542C19CB8EED00179BC2 /* ABMCircularPieViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABMCircularPieViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CAC543119CB8EED00179BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAC543219CB8EED00179BC2 /* ABMCircularPieViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABMCircularPieViewTests.swift; sourceTree = "<group>"; };
+		3CAC543D19CB8F7400179BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CAC543F19CB8F7400179BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3CAC544119CB8F7400179BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CAC544219CB8F7400179BC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3CAC544319CB8F7400179BC2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAC544419CB8F7400179BC2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CAC544719CB8F7400179BC2 /* BWGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWGradientView.h; sourceTree = "<group>"; };
+		3CAC544819CB8F7400179BC2 /* BWGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWGradientView.swift; sourceTree = "<group>"; };
+		3CAC544919CB8F7400179BC2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAC544B19CB8F7400179BC2 /* CircularPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularPieProgressView.h; sourceTree = "<group>"; };
+		3CAC544C19CB8F7400179BC2 /* CircularPieProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularPieProgressView.swift; sourceTree = "<group>"; };
+		3CAC544D19CB8F7400179BC2 /* CircularPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularPieView.swift; sourceTree = "<group>"; };
+		3CAC544E19CB8F7400179BC2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAC544F19CB8F7400179BC2 /* DrummerBoy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DrummerBoy-Bridging-Header.h"; sourceTree = "<group>"; };
+		3CAC545119CB8F7400179BC2 /* ScoreCircularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCircularView.swift; sourceTree = "<group>"; };
+		3CAC545319CB8F7400179BC2 /* SurvivalCircularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurvivalCircularView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CAC541419CB8EED00179BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CAC542919CB8EED00179BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CAC540E19CB8EED00179BC2 = {
+			isa = PBXGroup;
+			children = (
+				3CAC543C19CB8F7400179BC2 /* ABMCircularPieViewExample */,
+				3CAC544519CB8F7400179BC2 /* ABMCircularPieView */,
+				3CAC542F19CB8EED00179BC2 /* ABMCircularPieViewTests */,
+				3CAC541819CB8EED00179BC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CAC541819CB8EED00179BC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC541719CB8EED00179BC2 /* ABMCircularPieView.app */,
+				3CAC542C19CB8EED00179BC2 /* ABMCircularPieViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CAC542F19CB8EED00179BC2 /* ABMCircularPieViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC543219CB8EED00179BC2 /* ABMCircularPieViewTests.swift */,
+				3CAC543019CB8EED00179BC2 /* Supporting Files */,
+			);
+			path = ABMCircularPieViewTests;
+			sourceTree = "<group>";
+		};
+		3CAC543019CB8EED00179BC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC543119CB8EED00179BC2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CAC543C19CB8F7400179BC2 /* ABMCircularPieViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC543D19CB8F7400179BC2 /* AppDelegate.swift */,
+				3CAC543E19CB8F7400179BC2 /* LaunchScreen.xib */,
+				3CAC544019CB8F7400179BC2 /* Main.storyboard */,
+				3CAC544219CB8F7400179BC2 /* Images.xcassets */,
+				3CAC544319CB8F7400179BC2 /* Info.plist */,
+				3CAC544419CB8F7400179BC2 /* ViewController.swift */,
+			);
+			path = ABMCircularPieViewExample;
+			sourceTree = "<group>";
+		};
+		3CAC544519CB8F7400179BC2 /* ABMCircularPieView */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC544619CB8F7400179BC2 /* BWGradientView */,
+				3CAC544A19CB8F7400179BC2 /* CircularView */,
+				3CAC544F19CB8F7400179BC2 /* DrummerBoy-Bridging-Header.h */,
+				3CAC545019CB8F7400179BC2 /* ScoreCircularView */,
+				3CAC545219CB8F7400179BC2 /* SurvivalCircularView */,
+			);
+			path = ABMCircularPieView;
+			sourceTree = "<group>";
+		};
+		3CAC544619CB8F7400179BC2 /* BWGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC544719CB8F7400179BC2 /* BWGradientView.h */,
+				3CAC544819CB8F7400179BC2 /* BWGradientView.swift */,
+				3CAC544919CB8F7400179BC2 /* Info.plist */,
+			);
+			path = BWGradientView;
+			sourceTree = "<group>";
+		};
+		3CAC544A19CB8F7400179BC2 /* CircularView */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC544B19CB8F7400179BC2 /* CircularPieProgressView.h */,
+				3CAC544C19CB8F7400179BC2 /* CircularPieProgressView.swift */,
+				3CAC544D19CB8F7400179BC2 /* CircularPieView.swift */,
+				3CAC544E19CB8F7400179BC2 /* Info.plist */,
+			);
+			path = CircularView;
+			sourceTree = "<group>";
+		};
+		3CAC545019CB8F7400179BC2 /* ScoreCircularView */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC545119CB8F7400179BC2 /* ScoreCircularView.swift */,
+			);
+			path = ScoreCircularView;
+			sourceTree = "<group>";
+		};
+		3CAC545219CB8F7400179BC2 /* SurvivalCircularView */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC545319CB8F7400179BC2 /* SurvivalCircularView.swift */,
+			);
+			path = SurvivalCircularView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CAC541619CB8EED00179BC2 /* ABMCircularPieView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CAC543619CB8EED00179BC2 /* Build configuration list for PBXNativeTarget "ABMCircularPieView" */;
+			buildPhases = (
+				3CAC541319CB8EED00179BC2 /* Sources */,
+				3CAC541419CB8EED00179BC2 /* Frameworks */,
+				3CAC541519CB8EED00179BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ABMCircularPieView;
+			productName = ABMCircularPieView;
+			productReference = 3CAC541719CB8EED00179BC2 /* ABMCircularPieView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CAC542B19CB8EED00179BC2 /* ABMCircularPieViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CAC543919CB8EED00179BC2 /* Build configuration list for PBXNativeTarget "ABMCircularPieViewTests" */;
+			buildPhases = (
+				3CAC542819CB8EED00179BC2 /* Sources */,
+				3CAC542919CB8EED00179BC2 /* Frameworks */,
+				3CAC542A19CB8EED00179BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CAC542E19CB8EED00179BC2 /* PBXTargetDependency */,
+			);
+			name = ABMCircularPieViewTests;
+			productName = ABMCircularPieViewTests;
+			productReference = 3CAC542C19CB8EED00179BC2 /* ABMCircularPieViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CAC540F19CB8EED00179BC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Brun's Software";
+				TargetAttributes = {
+					3CAC541619CB8EED00179BC2 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3CAC542B19CB8EED00179BC2 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3CAC541619CB8EED00179BC2;
+					};
+				};
+			};
+			buildConfigurationList = 3CAC541219CB8EED00179BC2 /* Build configuration list for PBXProject "ABMCircularPieView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CAC540E19CB8EED00179BC2;
+			productRefGroup = 3CAC541819CB8EED00179BC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CAC541619CB8EED00179BC2 /* ABMCircularPieView */,
+				3CAC542B19CB8EED00179BC2 /* ABMCircularPieViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CAC541519CB8EED00179BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CAC545B19CB8F7400179BC2 /* Info.plist in Resources */,
+				3CAC545519CB8F7400179BC2 /* LaunchScreen.xib in Resources */,
+				3CAC545E19CB8F7400179BC2 /* Info.plist in Resources */,
+				3CAC545619CB8F7400179BC2 /* Main.storyboard in Resources */,
+				3CAC545719CB8F7400179BC2 /* Images.xcassets in Resources */,
+				3CAC545819CB8F7400179BC2 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CAC542A19CB8EED00179BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CAC541319CB8EED00179BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CAC545419CB8F7400179BC2 /* AppDelegate.swift in Sources */,
+				3CAC545A19CB8F7400179BC2 /* BWGradientView.swift in Sources */,
+				3CAC545C19CB8F7400179BC2 /* CircularPieProgressView.swift in Sources */,
+				3CAC545D19CB8F7400179BC2 /* CircularPieView.swift in Sources */,
+				3CAC545919CB8F7400179BC2 /* ViewController.swift in Sources */,
+				3CAC545F19CB8F7400179BC2 /* ScoreCircularView.swift in Sources */,
+				3CAC546019CB8F7400179BC2 /* SurvivalCircularView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CAC542819CB8EED00179BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CAC543319CB8EED00179BC2 /* ABMCircularPieViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CAC542E19CB8EED00179BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CAC541619CB8EED00179BC2 /* ABMCircularPieView */;
+			targetProxy = 3CAC542D19CB8EED00179BC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CAC543E19CB8F7400179BC2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CAC543F19CB8F7400179BC2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3CAC544019CB8F7400179BC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CAC544119CB8F7400179BC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CAC543419CB8EED00179BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CAC543519CB8EED00179BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CAC543719CB8EED00179BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = ABMCircularPieViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3CAC543819CB8EED00179BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = ABMCircularPieViewExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3CAC543A19CB8EED00179BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ABMCircularPieViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABMCircularPieView.app/ABMCircularPieView";
+			};
+			name = Debug;
+		};
+		3CAC543B19CB8EED00179BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ABMCircularPieViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABMCircularPieView.app/ABMCircularPieView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CAC541219CB8EED00179BC2 /* Build configuration list for PBXProject "ABMCircularPieView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CAC543419CB8EED00179BC2 /* Debug */,
+				3CAC543519CB8EED00179BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CAC543619CB8EED00179BC2 /* Build configuration list for PBXNativeTarget "ABMCircularPieView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CAC543719CB8EED00179BC2 /* Debug */,
+				3CAC543819CB8EED00179BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3CAC543919CB8EED00179BC2 /* Build configuration list for PBXNativeTarget "ABMCircularPieViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CAC543A19CB8EED00179BC2 /* Debug */,
+				3CAC543B19CB8EED00179BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CAC540F19CB8EED00179BC2 /* Project object */;
+}
