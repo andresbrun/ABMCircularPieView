@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="muS-gl-gC0">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJC-Bt-AS9" customClass="CircularPieProgressView" customModule="ABMCircularPieView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJC-Bt-AS9" customClass="CircularPieProgressView" customModule="ABMCircularPieView">
                                 <rect key="frame" x="250" y="100" width="100" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -38,7 +39,6 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
                                         <color key="value" red="0.98039215800000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDownPosition" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
@@ -74,7 +74,6 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackColorDanger">
                                         <color key="value" red="0.98039215800000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDownPosition" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
@@ -198,20 +197,20 @@
                                 <exclude reference="3VH-4R-E7o"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="DOe-NB-yQl"/>
+                                <exclude reference="tgr-dP-con"/>
+                                <exclude reference="Mzw-c4-UpS"/>
+                                <exclude reference="S6v-6l-5jl"/>
+                                <exclude reference="SMJ-wW-cM0"/>
+                                <exclude reference="CjH-gW-5pl"/>
+                                <exclude reference="FOT-bQ-3vt"/>
                                 <exclude reference="G5N-eM-AZD"/>
                                 <exclude reference="VgZ-aK-JrV"/>
                                 <exclude reference="gaR-Yd-YdH"/>
                                 <exclude reference="hfe-Wy-3N0"/>
                                 <exclude reference="x0B-kt-7xX"/>
-                                <exclude reference="Mzw-c4-UpS"/>
-                                <exclude reference="S6v-6l-5jl"/>
-                                <exclude reference="SMJ-wW-cM0"/>
-                                <exclude reference="DOe-NB-yQl"/>
-                                <exclude reference="tgr-dP-con"/>
                                 <exclude reference="KKa-dN-BQh"/>
                                 <exclude reference="smM-vO-vl0"/>
-                                <exclude reference="CjH-gW-5pl"/>
-                                <exclude reference="FOT-bQ-3vt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -222,20 +221,20 @@
                                 <include reference="3VH-4R-E7o"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="DOe-NB-yQl"/>
+                                <include reference="tgr-dP-con"/>
+                                <include reference="Mzw-c4-UpS"/>
+                                <include reference="S6v-6l-5jl"/>
+                                <include reference="SMJ-wW-cM0"/>
+                                <include reference="CjH-gW-5pl"/>
+                                <include reference="FOT-bQ-3vt"/>
                                 <exclude reference="G5N-eM-AZD"/>
                                 <include reference="VgZ-aK-JrV"/>
                                 <include reference="gaR-Yd-YdH"/>
                                 <include reference="hfe-Wy-3N0"/>
                                 <exclude reference="x0B-kt-7xX"/>
-                                <include reference="Mzw-c4-UpS"/>
-                                <include reference="S6v-6l-5jl"/>
-                                <include reference="SMJ-wW-cM0"/>
-                                <include reference="DOe-NB-yQl"/>
-                                <include reference="tgr-dP-con"/>
                                 <include reference="KKa-dN-BQh"/>
                                 <include reference="smM-vO-vl0"/>
-                                <include reference="CjH-gW-5pl"/>
-                                <include reference="FOT-bQ-3vt"/>
                             </mask>
                         </variation>
                     </view>

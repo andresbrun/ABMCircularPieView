@@ -170,17 +170,26 @@ import QuartzCore
     
     func animateProgress (progress: CGFloat)
     {
-        var path = createPathWithProgress(progress)
+        var step = (progress - currentProgress) / 50.0;
         
-        var animation = CABasicAnimation()
-        animation.keyPath = "path"
-        animation.duration = 0.5
-        animation.fromValue = maskLayer.path
-        animation.toValue = path
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-        self.maskLayer.path = path;
+        var index = 0
+        for (var i = currentProgress ; ((step < 0) ? (i > progress) : (i < progress)) ; i+=step)
+        {
+            updateMask(self.createPathWithProgress(i), after: Double(index) * Double(0.02))
+            index++
+        }
+
+        currentProgress = progress
+    }
+    
+    func updateMask (path: CGPath, after: Double)
+    {
+        let delay = after * Double(NSEC_PER_SEC)
+        let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         
-        maskLayer.addAnimation(animation, forKey: "path")
+        dispatch_after(time, dispatch_get_main_queue(), {
+            self.maskLayer.path = path
+        })
     }
     
     func getRelativeAngle (progress: CGFloat) -> CGFloat

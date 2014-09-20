@@ -66,20 +66,20 @@ import UIKit
         return roundProgress
     }
     
-    override func animateProgress (progress: CGFloat)
-    {
-        var path = createPathWithProgress(getRoundProgress(progress))
-        
-        var animation = CABasicAnimation()
-        animation.keyPath = "path"
-        animation.duration = 0.5
-        animation.fromValue = maskLayer.path
-        animation.toValue = path
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-        self.maskLayer.path = path;
-        
-        maskLayer.addAnimation(animation, forKey: "path")
-    }
+//    override func animateProgress (progress: CGFloat)
+//    {
+//        var path = createPathWithProgress(getRoundProgress(progress))
+//        
+//        var animation = CABasicAnimation()
+//        animation.keyPath = "path"
+//        animation.duration = 0.5
+//        animation.fromValue = maskLayer.path
+//        animation.toValue = path
+//        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+//        self.maskLayer.path = path;
+//        
+//        maskLayer.addAnimation(animation, forKey: "path")
+//    }
 
     override func startAngleForProgress(progress: CGFloat) -> CGFloat {
         return startAngle
