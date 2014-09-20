@@ -459,6 +459,7 @@
 				3CAC543819CB8EED00179BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CAC543919CB8EED00179BC2 /* Build configuration list for PBXNativeTarget "ABMCircularPieViewTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +468,7 @@
 				3CAC543B19CB8EED00179BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

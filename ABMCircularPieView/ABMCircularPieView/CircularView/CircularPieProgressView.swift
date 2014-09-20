@@ -11,6 +11,8 @@ import QuartzCore
 
 @IBDesignable class CircularPieProgressView: UIView {
     
+    let animationTotalTime = 1.0
+    let animationStep = 0.01
     
     @IBInspectable var bgColor: UIColor = UIColor.whiteColor() {
         didSet{
@@ -170,26 +172,34 @@ import QuartzCore
     
     func animateProgress (progress: CGFloat)
     {
-        var step = (progress - currentProgress) / 50.0;
+        var gap = (progress - currentProgress)
+        var step = gap < 0 ? -animationStep : animationStep;
+        var total = fabs(Double(gap) / animationStep)
         
         var index = 0
-        for (var i = currentProgress ; ((step < 0) ? (i > progress) : (i < progress)) ; i+=step)
+        for (var i:CGFloat = currentProgress ; ((step < 0) ? (i > progress) : (i < progress)) ; i+=CGFloat(step))
         {
-            updateMask(self.createPathWithProgress(i), after: Double(index) * Double(0.02))
+            updateMask(self.createPathWithProgress(i), after: Double(index) / total)
             index++
         }
 
         currentProgress = progress
     }
     
-    func updateMask (path: CGPath, after: Double)
+    private func updateMask (path: CGPath, after: Double)
     {
-        let delay = after * Double(NSEC_PER_SEC)
+        let delay = getDelayForProgress(after) * Double(NSEC_PER_SEC)
         let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         
         dispatch_after(time, dispatch_get_main_queue(), {
             self.maskLayer.path = path
         })
+    }
+    
+    private func getDelayForProgress (progress: Double) -> Double
+    {
+        //Add here timing function you want to use
+        return progress * animationTotalTime
     }
     
     func getRelativeAngle (progress: CGFloat) -> CGFloat
